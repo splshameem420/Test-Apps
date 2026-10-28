@@ -1,0 +1,20 @@
+name: Test T Sports
+
+on:
+  workflow_dispatch:   # হাতে "Run workflow" বাটন চেপে চালানোর জন্য
+
+jobs:
+  test:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.11"
+
+      - name: Install packages
+        run: pip install newspaper3k requests lxml_html_clean curl_cffi
+
+      - name: Run T Sports test
+        run: python cc.py
