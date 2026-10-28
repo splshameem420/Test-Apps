@@ -24,7 +24,7 @@ HEADERS = {
     "Referer": "https://www.tsports.com/",
 }
 
-SITEMAP_URL = "https://www.jamuna.tv/news_sitemap.xml"
+SITEMAP_URL = "https://www.tsports.com/news_sitemap.xml"
 
 NS = {
     "s": "http://www.sitemaps.org/schemas/sitemap/0.9",
